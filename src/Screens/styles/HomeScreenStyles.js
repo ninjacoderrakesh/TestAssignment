@@ -1,0 +1,145 @@
+import {StyleSheet} from 'react-native';
+import {ThemeColors} from '../../assets/Theme';
+
+let shadow = {
+  shadowColor: '#000',
+  shadowOffset: {
+    width: 0,
+    height: 2,
+  },
+  shadowOpacity: 0.2,
+  shadowRadius: 3.84,
+  elevation: 5,
+};
+
+export const style = StyleSheet.create({
+  cnt: {flex: 1, backgroundColor: 'white', justifyContent: 'flex-end'},
+  cardCnt: {
+    ...shadow,
+    width: '95%',
+    alignSelf: 'center',
+    backgroundColor: ThemeColors.cardBackColor,
+    borderRadius: 15,
+    marginBottom: '5%',
+    marginTop: '2%',
+  },
+  detailCardCnt: {
+    ...shadow,
+    backgroundColor: ThemeColors.white,
+    borderRadius: 20,
+    borderWidth: 2,
+    borderColor: ThemeColors.black,
+    padding: 11,
+    margin: 13,
+    elevation: 5,
+  },
+  avatarCard: {
+    height: 331,
+    width: '100%',
+    backgroundColor: ThemeColors.mediaCoverColor,
+    borderRadius: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: '15%',
+  },
+  basicDetailCnt: {
+    flexDirection: 'row',
+    marginTop: 11,
+    justifyContent: 'space-between',
+  },
+  detailTxtCnt: {
+    justifyContent: 'space-around',
+    width: '65%',
+  },
+  nameStyle: {
+    fontSize: 29,
+    color: ThemeColors.primaryText,
+    textAlign: 'left',
+    fontWeight: '900',
+  },
+  ageDistanceStyle: {
+    fontSize: 15,
+    color: ThemeColors.secondryText,
+    fontWeight: '600',
+    textAlign: 'left',
+  },
+  profileCnt: {
+    height: 102,
+    width: 102,
+    backgroundColor: ThemeColors.mediaCoverColor,
+    borderRadius: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  percentageCnt: {
+    height: 51.7,
+    width: 51.7,
+    backgroundColor: ThemeColors.white,
+    alignSelf: 'center',
+    borderRadius: 1000,
+    borderWidth: 2,
+    marginTop: '-10.5%',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  devider: {
+    borderWidth: 2,
+    borderColor: '#EBEBEB',
+    marginVertical: 25,
+  },
+  intrestCardCnt: {
+    flexDirection: 'row',
+    padding: 10,
+  },
+  interestImg: {
+    ...shadow,
+    height: 100,
+    width: 100,
+    backgroundColor: ThemeColors.white,
+    borderRadius: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  interestSubCnt: {
+    justifyContent: 'center',
+    width: '65%',
+    marginLeft: '3%',
+  },
+  interestTitle: {
+    color: ThemeColors.primaryText,
+    fontSize: 20,
+    fontWeight: '900',
+  },
+  inspectionDescription: {
+    color: '#292D32',
+    fontSize: 13,
+    // fontWeight: '600',
+  },
+  actionBtn: {
+    ...shadow,
+    height: 60,
+    width: 60,
+    backgroundColor: ThemeColors.white,
+    borderRadius: 1000,
+    borderWidth: 2,
+    borderColor: ThemeColors.black,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginHorizontal: '4%',
+  },
+  likeBtnImg: {
+    height: 24,
+    width: 24,
+    alignSelf: 'center',
+  },
+  actionBtnStyle: {
+    marginVertical: 24,
+    flexDirection: 'row',
+    justifyContent: 'center',
+  },
+  subCnt: {
+    flex: 1,
+    backgroundColor: 'white',
+    justifyContent: 'flex-end',
+  },
+});
